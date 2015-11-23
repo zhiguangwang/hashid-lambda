@@ -27,7 +27,7 @@ var ALPHABET = {
 }
 
 exports.handler = function(evt, context) {
-    console.log('Received evt:', JSON.stringify(evt, null, 2));
+    // console.log('Received evt:', JSON.stringify(evt, null, 2));
 
     if (!evt.table) {
         context.fail(new Error("Missing DynamoDB table name."));
