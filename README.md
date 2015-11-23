@@ -37,7 +37,7 @@ Set Lambda Error Regex to *empty* when Method response status is **200**.
 
 Set Lambda Error Regex to **.+** when Method response status is **400**.
 
-Add a mapping template with Content-Type **application/json**:
+Add a mapping template with Content-Type **application/json** when Method response status is **400**:
 
     #set($inputRoot = $input.path('$'))
     {
