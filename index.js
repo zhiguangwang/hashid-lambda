@@ -70,6 +70,7 @@ exports.handler = function(evt, context) {
             context.succeed({
                 "id": encoded,
                 "decoded": number,
+                "name": evt.name,
                 "minLength": minLength,
                 "alphabet": evt.alphabet
             });
