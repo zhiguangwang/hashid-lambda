@@ -1,0 +1,14 @@
+{
+    "name": "hashid-lambda",
+    "dependencies": {
+        "hashids": "1.0.2"
+    },
+    "devDependencies": {
+        "aws-sdk": "^2.2.18",
+        "dynamodb-doc": "^1.0.0"
+    },
+    "version": "1.0.0",
+    "scripts": {
+        "zip": "zip -r hashid-lambda.zip package.json index.js node_modules/hashids"
+    }
+}
